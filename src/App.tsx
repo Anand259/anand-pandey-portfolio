@@ -48,7 +48,7 @@ const skills = [
   ['Tailwind CSS', 'Advanced'],
   ['Bootstrap', 'Advanced'],
   ['Git / GitHub Actions', 'Advanced'],
-  ['Web3 / Blockchain APIs', 'Experienced'],
+  ['Inertia.js', 'Experienced'],
 ]
 
 function App() {
@@ -205,10 +205,10 @@ function App() {
           <div className="project-grid">
             {projects.map((project, i) => <article className={`project-card ${project.accent}`} key={project.title}>
               <div className="project-visual">
-                <div className="browser"><div className="browser-bar"><span/><span/><span/></div><div className="mock-ui"><div className="mock-side"/><div className="mock-main"><div/><div/><div/></div></div></div>
-                <span className="project-number">0{i+1}</span>
+                <div className="browser"><div className="browser-bar"><span /><span /><span /></div><div className="mock-ui"><div className="mock-side" /><div className="mock-main"><div /><div /><div /></div></div></div>
+                <span className="project-number">0{i + 1}</span>
               </div>
-              <div className="project-body"><small>{project.category}</small><h3>{project.title} <ArrowUpRight size={19}/></h3><p>{project.description}</p><div className="tags">{project.tags.map(t => <span key={t}>{t}</span>)}</div></div>
+              <div className="project-body"><small>{project.category}</small><h3>{project.title} <ArrowUpRight size={19} /></h3><p>{project.description}</p><div className="tags">{project.tags.map(t => <span key={t}>{t}</span>)}</div></div>
             </article>)}
           </div>
         </section>
@@ -223,7 +223,7 @@ function App() {
                 ['02', 'Frontend', 'Responsive React.js interfaces with reusable components, Tailwind CSS and Bootstrap.'],
                 ['03', 'Integration', 'Third-party APIs, calendar/meeting workflows and blockchain/Web3 integrations.'],
                 ['04', 'Delivery', 'Performance optimization, Git, GitHub Actions and CI/CD workflows for dependable releases.'],
-              ].map(([n,t,d]) => <div className="process-item" key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></div>)}
+              ].map(([n, t, d]) => <div className="process-item" key={n}><span>{n}</span><h3>{t}</h3><p>{d}</p></div>)}
             </div>
           </div>
         </section>
@@ -232,7 +232,7 @@ function App() {
           <div className="contact-card">
             <div className="contact-icon"><Send /></div>
             <div><div className="section-label">06 / Contact</div><h2>Let's build something <span className="gradient-text">useful.</span></h2><p>Have a web application, API, Laravel or React.js project in mind? Get in touch and let's discuss the requirements.</p></div>
-            <a className="primary" href="mailto:anandpandey259@gmail.com">anandpandey259@gmail.com <ArrowUpRight size={18}/></a>
+            <a className="primary" href="mailto:anandpandey259@gmail.com">anandpandey259@gmail.com <ArrowUpRight size={18} /></a>
           </div>
         </section>
       </main>
@@ -259,7 +259,7 @@ function App() {
 
       <footer className="footer">
         <div className="container footer-inner">
-          <div><button className="brand" onClick={() => go('home')}><span className="brand-mark">&lt;/&gt;</span><span>Anand<span className="muted">.dev</span></span></button><p>Senior Web Developer · PHP · Laravel · React.js</p></div>
+          <div><button className="brand" onClick={() => go('home')}><span className="brand-mark">&lt;/&gt;</span><span>Anand Pandey {/*<span className="muted">.dev</span>*/}</span></button><p>Senior Web Developer · PHP · Laravel · React.js</p></div>
           <div className="socials"><a href="https://github.com/Anand259" target="_blank" rel="noreferrer" aria-label="GitHub"><Github /></a><a href="https://www.linkedin.com/in/anand-pandey-dev" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin /></a><a href="mailto:anandpandey259@gmail.com" aria-label="Email"><Mail /></a></div>
           <small>© 2026 Anand Pandey. Built with React + TypeScript.</small>
         </div>
